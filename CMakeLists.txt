@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include(polyscope)
-add_definitions(-DSTB_ALREADY_IMPLEMENTED)
+add_definitions(-DNO_ADD_STBIMAGE_IMPLEMENT)
 include(dgtal)
 
 include_directories(${DGTAL_INCLUDE_DIRS})
